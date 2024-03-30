@@ -24,3 +24,11 @@ listItem.innerHTML = `<span class="name">${nameInput.value}</span> ${numberInput
 nameInput.value = "";
 numberInput.value = "";
 }
+
+const formatBtn = document.getElementById("format");
+
+function formatContacts() {
+  alert('hi');
+}
+
+formatBtn.addEventListener("click", formatContacts);
