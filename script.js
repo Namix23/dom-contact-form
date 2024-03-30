@@ -7,6 +7,6 @@ form.addEventListener('submit', event => {
 
 //use DOM manipulation to add the entered info to our list
 const nameInput = document.querySelector('#name');
-const numberInput = document.querySelector("#phone");;
+const numberInput = document.querySelector("#phone");
 function addContact(){
 }
