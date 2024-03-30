@@ -33,6 +33,7 @@ function formatContacts() {
   for (let i = 0; i < contacts.length; i++) {
     let contact = contacts[i];
     contact.className = "contact";
+    contact.style.backgroundColor("orange")
     createX();
   }
 }
