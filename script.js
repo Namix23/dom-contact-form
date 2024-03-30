@@ -1,3 +1,7 @@
 //handle form submission
 const form = document.getElementById('contact-form');
-form.innerHTML= "hello";
+form.addEventListener('submit', function(event){
+
+});
+function myFunction(event){
+}
