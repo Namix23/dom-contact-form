@@ -35,10 +35,13 @@ function formatContacts() {
     // contact.className = "contact";
     contact.classList.add("contact");
     // contact.style.backgroundColor("orange")
-    createX();
+    createX(contact);
   }
 }
 
-function createX(liNode) {}
+function createX(liNode) {
+  let xBtn = document.createElement("span");
+  
+}
 
 formatBtn.addEventListener("click", formatContacts);
