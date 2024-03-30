@@ -1,0 +1,64 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: beige;
+  padding-top: 3em;
+  margin: 0;
+}
+
+main {
+  margin: .5rem;
+}
+
+h1 {
+  background-color: #20bc95;
+  position: fixed;
+  top: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+form {
+  padding: 2em;
+  background-color: lightblue;
+}
+
+form * {
+  display: block;
+}
+
+input[type="submit"] {
+  margin: 1em 0;
+}
+
+.name {
+  font-size: 2em;
+  padding: .2em;
+  background-color: blue;
+  color: white;
+}
+
+.contact {
+  font-size: 1.2em;
+  background-color: #8dd3be;
+  white-space: nowrap;
+}
+
+.x {
+  float: right;
+  background-color: #ff00ae;
+  padding: 4px;
+}
+
+#contactList {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#contactList li {
+  margin: 1em 0;
+}
