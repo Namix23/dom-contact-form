@@ -9,5 +9,7 @@ form.addEventListener('submit', event => {
 const nameInput = document.querySelector('#name');
 const numberInput = document.querySelector("#phone");
 function addContact(){
-  if (nameInput.value == "" || numberInput.value == "")
+  if (nameInput.value == "" || numberInput.value == "");
+  alert('contact is missing info');
+  return;
 }
