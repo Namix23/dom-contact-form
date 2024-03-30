@@ -28,7 +28,11 @@ numberInput.value = "";
 const formatBtn = document.getElementById("format");
 
 function formatContacts() {
-  alert('hi');
+  let contacts = document.querySelectorAll("#contactList li");
+}
+
+function createX(liNode){
+  
 }
 
 formatBtn.addEventListener("click", formatContacts);
