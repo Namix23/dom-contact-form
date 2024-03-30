@@ -20,4 +20,7 @@ function addContact() {
 let listItem = document.createElement ("li");
 contactList.append(listItem);
 listItem.innerHTML = `${nameInput.value} ${numberInput.value}`;
+
+nameInput.value = "";
+numberInput.value = "";
 }
