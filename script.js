@@ -9,4 +9,5 @@ form.addEventListener('submit', event => {
 const nameInput = document.querySelector('#name');
 const numberInput = document.querySelector("#phone");
 function addContact(){
+  if (nameInput.value == "" || numberInput.value == "")
 }
