@@ -32,7 +32,8 @@ function formatContacts() {
   let contacts = document.querySelectorAll("#contact-list li");
   for (let i = 0; i < contacts.length; i++) {
     let contact = contacts[i];
-    contact.className = "contact";
+    // contact.className = "contact";
+    contact.classList.add("contact");
     // contact.style.backgroundColor("orange")
     createX();
   }
