@@ -20,12 +20,13 @@ function addContact() {
   //add entry to contact list
   let listItem = document.createElement("li");
   contactList.append(listItem);
-  listItem.innerHTML = `<span class="name">${nameInput.value}</span> ${numberInput.value}`;
+  listItem.innerHTML = `<span class= "name"> ${nameInput.value}</span> ${numberInput.value}`;
 
   nameInput.value = "";
   numberInput.value = "";
 }
 
+//format btn
 const formatBtn = document.getElementById("format");
 
 function formatContacts() {
@@ -39,9 +40,9 @@ function formatContacts() {
   }
 
   function createX(liNode) {
-    for (let i = 0; i < liNode.children.length; i++){
+    for (let i = 0; i < liNode.children.length; i++) {
       let currentChild = liNode.children[i];
-      if (currentChild.classList.contains()){
+      if (currentChild.classList.contains()) {
         return;
       }
     }
