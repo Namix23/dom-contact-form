@@ -39,6 +39,10 @@ function formatContacts() {
   }
 
   function createX(liNode) {
+    for (let i = 0; i < liNode.children.length; i++){
+      let currentChild = liNode.children[i];
+      
+    }
     let xBtn = document.createElement("span");
     xBtn.innerHTML = "x";
     xBtn.classList.add("x");
