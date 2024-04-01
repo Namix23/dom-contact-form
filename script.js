@@ -44,6 +44,7 @@ function createX(liNode) {
   xBtn.innerHTML = "x";
   xBtn.classList.add("x");
   liNode.append(xBtn);
+  xBtn.addEventListener("click", function()){
 }
 
 formatBtn.addEventListener("click", formatContacts);
