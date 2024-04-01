@@ -34,17 +34,18 @@ function formatContacts() {
     let contact = contacts[i];
     // contact.className = "contact";
     contact.classList.add("contact");
-    // contact.style.backgroundColor("orange")
+    contact.style.backgroundColor("orange");
     createX(contact);
   }
-}
 
-function createX(liNode) {
-  let xBtn = document.createElement("span");
-  xBtn.innerHTML = "x";
-  xBtn.classList.add("x");
-  liNode.append(xBtn);
-  xBtn.addEventListener("click", function()){
+  function createX(liNode) {
+    let xBtn = document.createElement("span");
+    xBtn.innerHTML = "x";
+    xBtn.classList.add("x");
+    liNode.append(xBtn);
+    xBtn.addEventListener("click", function () {
+      liNode.remove();
+    });
+  }
 }
-
 formatBtn.addEventListener("click", formatContacts);
