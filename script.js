@@ -30,15 +30,19 @@ function addContact() {
 const formatBtn = document.getElementById("format");
 
 function formatContacts() {
+  //document.get
   let contacts = document.querySelectorAll("#contact-list li");
+
+  //loop through each contact
   for (let i = 0; i < contacts.length; i++) {
     let contact = contacts[i];
-    // contact.className = "contact";
-    contact.classList.add = "contact";
+    contact.className = "contact";
+    // contact.classList.add = "contact";
     // contact.style.backgroundColor = "orange";
-    createX(contact);
+    createX();
   }
 
+  //
   function createX(liNode) {
     for (let i = 0; i < liNode.children.length; i++) {
       let currentChild = liNode.children[i];
@@ -55,4 +59,5 @@ function formatContacts() {
     });
   }
 }
+
 formatBtn.addEventListener("click", formatContacts);
