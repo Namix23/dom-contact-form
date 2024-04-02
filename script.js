@@ -38,7 +38,7 @@ function formatContacts() {
     let contact = contacts[i];
     contact.className = "contact";
     // contact.classList.add = "contact";
-    contact.style.backgroundColor = "orange";
+    // contact.style.backgroundColor = "orange";
     createX(contact);
   }
 }
