@@ -38,11 +38,10 @@ function formatContacts() {
     let contact = contacts[i];
     contact.className = "contact";
     // contact.classList.add = "contact";
-    // contact.style.backgroundColor = "orange";
-    createX();
+    contact.style.backgroundColor = "orange";
+    createX(contact);
   }
-
-  //
+}
   function createX(liNode) {
     for (let i = 0; i < liNode.children.length; i++) {
       let currentChild = liNode.children[i];
