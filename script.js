@@ -51,10 +51,10 @@ function createX(liNode) {
     return;
       }
     }
-    let xBtn = document.createElement("span");
-    xBtn.innerHTML = "x";
-    xBtn.classList.add("x");
-    liNode.append(xBtn);
+  let xBtn = document.createElement("span");
+  xBtn.innerHTML = "x";
+  xBtn.classList.add("x");
+  liNode.append(xBtn);
     xBtn.addEventListener("click", function () {
       liNode.remove();
     }); 
