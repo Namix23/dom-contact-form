@@ -44,11 +44,11 @@ function formatContacts() {
   }
 }
   //create x button
-  function createX(liNode) {
-    for (let i = 0; i < liNode.children.length; i++) {
-      let currentChild = liNode.children[i];
-      if (currentChild.classList.contains()) {
-        return;
+function createX(liNode) {
+  for (let i = 0; i < liNode.children.length; i++) {
+    let currentChild = liNode.children[i];
+    if (currentChild.classList.contains()) {
+    return;
       }
     }
     let xBtn = document.createElement("span");
@@ -57,8 +57,7 @@ function formatContacts() {
     liNode.append(xBtn);
     xBtn.addEventListener("click", function () {
       liNode.remove();
-    });
-  }
+    }); 
 }
 
 formatBtn.addEventListener("click", formatContacts);
