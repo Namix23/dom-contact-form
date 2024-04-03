@@ -48,7 +48,8 @@ function createX(liNode) {
   //check to make sure there isn;t already an x button
   for (let i = 0; i < liNode.children.length; i++) {
     let currentChild = liNode.children[i];
-    if (currentChild.classList.contains()) {
+    //check if child contains the class x
+    if (currentChild.classList.contains("x")) {
     return;
       }
     }
