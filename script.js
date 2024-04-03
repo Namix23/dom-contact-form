@@ -45,6 +45,7 @@ function formatContacts() {
 }
   //create x button
 function createX(liNode) {
+  //check to make sure there isn;t already an x button
   for (let i = 0; i < liNode.children.length; i++) {
     let currentChild = liNode.children[i];
     if (currentChild.classList.contains()) {
@@ -55,9 +56,10 @@ function createX(liNode) {
   xBtn.innerHTML = "x";
   xBtn.classList.add("x");
   liNode.append(xBtn);
-    xBtn.addEventListener("click", function () {
-      liNode.remove();
-    }); 
+  //when clicked, remove liNode
+  xBtn.addEventListener("click", function () {
+    liNode.remove();
+  }); 
 }
 
-formatBtn.addEventListener("click", formatContacts);
+formatBtn.addEventListener('click', formatContacts);
