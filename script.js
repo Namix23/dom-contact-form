@@ -50,9 +50,9 @@ function createX(liNode) {
     let currentChild = liNode.children[i];
     //check if child contains the class x
     if (currentChild.classList.contains("x")) {
-    return;
-      }
-    }
+      return;
+    }  
+  }  
   let xBtn = document.createElement("span");
   xBtn.innerHTML = "x";
   xBtn.classList.add("x");
