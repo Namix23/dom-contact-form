@@ -36,12 +36,14 @@ function formatContacts() {
   //loop through each contact
   for (let i = 0; i < contacts.length; i++) {
     let contact = contacts[i];
-    contact.className = "contact";
+    // contact.className = "contact";
+    contact.classList.add("contact");
     // contact.classList.add = "contact";
     // contact.style.backgroundColor = "orange";
     createX(contact);
   }
 }
+  //create x button
   function createX(liNode) {
     for (let i = 0; i < liNode.children.length; i++) {
       let currentChild = liNode.children[i];
